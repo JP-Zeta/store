@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+  <title>Abril-Store</title>
+</head>
+<body>
+  <header class="header"><img src="/img/logo(oscuro).png" alt="logo de la tienda"></header>
+  <div class="filter">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class=" p-4 filter-menu">
+        <h5 class="text-body-emphasis h4">Filtros</h5>
+        <ul class="filter-ul">
+          <li>
+            <label>
+                <input type="checkbox" name="Franela de niño">
+                Franela de niño
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="Blusa de Dama">
+                Blusa de Dama
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="Franela de caballero">
+                Franela de caballero
+            </label>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-success">Aplicar</button>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+  
+  <main class="main justify-content-center">
+    <div class="menu">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inventario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ventas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="container-inventario">
+      <h2 class="text-center">Inventario</h2>
+      <div class="content-inventario">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Franela de niño.
+            <span class="badge text-bg-primary rounded-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Blusa de dama.
+            <span class="badge text-bg-primary rounded-pill">2</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Franela de caballero.
+            <span class="badge text-bg-primary rounded-pill">1</span>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn-danger"><a href="/index.html">Salir</a></button>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer"></footer>
+
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+</body>
+</html>
